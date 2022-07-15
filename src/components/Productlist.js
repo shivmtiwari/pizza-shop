@@ -12,7 +12,7 @@ const Productlist = () => {
  
   const [products, setProducts] = useState([]);
   useEffect(()=>{
-    fetch('/api/products')
+    fetch('https://ecom-rest-apis.herokuapp.com/api/products')
     .then(response => response.json())
     .then(products=>{
       setProducts(products);
